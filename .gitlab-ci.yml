@@ -11,3 +11,18 @@ unittest_unit:
   stage: Unit Tests
   script:
   - python -m unittest discover test/unit
+
+unittest_integration:
+  stage: Integration Tests
+  script:
+  - python -m unittest discover test/integration
+
+unittest_system:
+  stage: Integration Tests
+  script:
+  - python -m unittest discover test/system
+
+unittest_acceptance:
+  stage: Integration Tests
+  script:
+  - python -m unittest discover test/system
